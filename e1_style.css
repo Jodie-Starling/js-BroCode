@@ -1,0 +1,32 @@
+body{
+    background-color: lightskyblue;
+}
+h1{
+    font-family: Bitcount Single Ink, sans-serif;
+    font-size:30px;
+    background-color: lightpink;
+    width: 700px;
+    text-align: center;
+}
+#countlabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+#btnContainer{
+    text-align: center;
+
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color:pink;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.btn:hover{
+    background-color: hsl(214, 100%, 74%);
+}

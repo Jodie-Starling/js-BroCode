@@ -24,7 +24,6 @@ function generateRandomPassword(length, includeUppercase, includeLowercase, incl
             // 从 allowedChars 中随机选择一个字符，注意是allowedChars.length，不是length
         password += allowedChars[randomIndex];
     }
-
     return password;
 }
 

@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 90%);
+}
+#myH1{
+    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: hsl(200, 70%, 40%);
+    margin-top: 50px;
+}
+#stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid hsl(200, 70%, 40%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsl(200, 70%, 40%);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+#controls button{
+    font-size: 1.5rem; /* rem is relative to the root font size, em is relative to the element's font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: hsl(0, 4%, 9%);
+    background-color: hsl(200, 70%, 40%);
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-width: 125px; /* 最小宽度 ensure buttons have the same width */
+    margin: 0 10px; /* space between buttons 上下 左右 */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
+#startBtn{
+    background-color: hsl(120, 70%, 40%);
+} 
+
+/* 未生效，ID 选择器优先级高于类选择器 */
+
+#startBtn:hover{
+    background-color: hsl(120, 70%, 30%);
+}
+#stopBtn:hover{
+    background-color: hsl(330, 70%, 50%); /* 粉色 */
+}
+#resetBtn:hover{
+    background-color: hsl(270, 70%, 50%); /* 紫色 */
+}
